@@ -1,0 +1,330 @@
+Partition Merge report for fft_t
+Wed May 14 15:34:21 2014
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge DSP Block Usage Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Partition Merge Summary                                                          ;
++------------------------------------+---------------------------------------------+
+; Partition Merge Status             ; Successful - Wed May 14 15:34:21 2014       ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name                      ; fft_t                                       ;
+; Top-level Entity Name              ; fft_t                                       ;
+; Family                             ; Cyclone II                                  ;
+; Total logic elements               ; 4,262                                       ;
+;     Total combinational functions  ; 2,805                                       ;
+;     Dedicated logic registers      ; 3,579                                       ;
+; Total registers                    ; 3579                                        ;
+; Total pins                         ; 14                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 364,672                                     ;
+; Embedded Multiplier 9-bit elements ; 12                                          ;
+; Total PLLs                         ; 1                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Post-Fit               ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                                                                                                               ;
++--------------------------------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; Name                                 ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                                                                                                                                                          ; Details ;
++--------------------------------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; FIFO:inst8|q[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[0]                                                                                  ; N/A     ;
+; FIFO:inst8|q[0]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[0]                                                                                  ; N/A     ;
+; FIFO:inst8|q[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[1]                                                                                  ; N/A     ;
+; FIFO:inst8|q[1]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[1]                                                                                  ; N/A     ;
+; FIFO:inst8|q[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[2]                                                                                  ; N/A     ;
+; FIFO:inst8|q[2]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[2]                                                                                  ; N/A     ;
+; FIFO:inst8|q[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[3]                                                                                  ; N/A     ;
+; FIFO:inst8|q[3]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[3]                                                                                  ; N/A     ;
+; FIFO:inst8|q[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[4]                                                                                  ; N/A     ;
+; FIFO:inst8|q[4]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[4]                                                                                  ; N/A     ;
+; FIFO:inst8|q[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[5]                                                                                  ; N/A     ;
+; FIFO:inst8|q[5]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[5]                                                                                  ; N/A     ;
+; FIFO:inst8|q[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[6]                                                                                  ; N/A     ;
+; FIFO:inst8|q[6]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[6]                                                                                  ; N/A     ;
+; FIFO:inst8|q[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[7]                                                                                  ; N/A     ;
+; FIFO:inst8|q[7]                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[7]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[0]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[0]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[1]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[1]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[2]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[2]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[3]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[3]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[4]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[4]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[5]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[5]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[6]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[6]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[7] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[7]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[7] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[7]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[8] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[8]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[8] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[8]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[9] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[9]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|fft_out_cnt[9] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_out_cnt[9]                                                                                                                                                                       ; N/A     ;
+; fft_fifo_design:inst1|sink_real[0]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[0]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[0]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[0]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[1]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[1]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[1]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[1]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[2]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[2]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[2]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[2]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[3]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[3]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[3]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[3]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[4]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[4]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[4]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[4]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[5]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[5]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[5]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[5]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[6]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[6]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[6]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[6]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[7]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[7]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|sink_real[7]   ; pre-synthesis ; connected ; Top            ; post-synthesis    ; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|q_a[7]                                                                                  ; N/A     ;
+; fft_fifo_design:inst1|source_real[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[14] ; N/A     ;
+; fft_fifo_design:inst1|source_real[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[14] ; N/A     ;
+; fft_fifo_design:inst1|source_real[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[15] ; N/A     ;
+; fft_fifo_design:inst1|source_real[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[15] ; N/A     ;
+; fft_fifo_design:inst1|source_real[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[16] ; N/A     ;
+; fft_fifo_design:inst1|source_real[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[16] ; N/A     ;
+; fft_fifo_design:inst1|source_real[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[17] ; N/A     ;
+; fft_fifo_design:inst1|source_real[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[17] ; N/A     ;
+; fft_fifo_design:inst1|source_real[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[18] ; N/A     ;
+; fft_fifo_design:inst1|source_real[4] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[18] ; N/A     ;
+; fft_fifo_design:inst1|source_real[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[19] ; N/A     ;
+; fft_fifo_design:inst1|source_real[5] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[19] ; N/A     ;
+; fft_fifo_design:inst1|source_real[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[20] ; N/A     ;
+; fft_fifo_design:inst1|source_real[6] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[20] ; N/A     ;
+; fft_fifo_design:inst1|source_real[7] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[21] ; N/A     ;
+; fft_fifo_design:inst1|source_real[7] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_source_fft_111:auk_dsp_atlantic_source_1|at_source_data[21] ; N/A     ;
+; clk_gen:inst4|clk_48K                ; post-fitting  ; connected ; Top            ; post-synthesis    ; clk_gen:inst4|clk_48K                                                                                                                                                                                      ; N/A     ;
++--------------------------------------+---------------+-----------+----------------+-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                     ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top   ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 3231  ; 145              ; 886                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total combinational functions               ; 2282  ; 121              ; 402                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;       ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 458   ; 51               ; 176                            ; 0                              ;
+;     -- 3 input functions                    ; 962   ; 32               ; 139                            ; 0                              ;
+;     -- <=2 input functions                  ; 862   ; 38               ; 87                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Logic elements by mode                      ;       ;                  ;                                ;                                ;
+;     -- normal mode                          ; 1695  ; 113              ; 341                            ; 0                              ;
+;     -- arithmetic mode                      ; 587   ; 8                ; 61                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total registers                             ; 2757  ; 86               ; 736                            ; 0                              ;
+;     -- Dedicated logic registers            ; 2757  ; 86               ; 736                            ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Virtual pins                                ; 0     ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 14    ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 12    ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 86144 ; 0                ; 278528                         ; 0                              ;
+; Total RAM block bits                        ; 0     ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1     ; 0                ; 0                              ; 0                              ;
+; PLL                                         ; 0     ; 0                ; 0                              ; 1                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Connections                                 ;       ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 15    ; 128              ; 1054                           ; 1                              ;
+;     -- Registered Input Connections         ; 14    ; 97               ; 835                            ; 0                              ;
+;     -- Output Connections                   ; 1063  ; 119              ; 2                              ; 14                             ;
+;     -- Registered Output Connections        ; 574   ; 118              ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Internal Connections                        ;       ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 23126 ; 770              ; 5527                           ; 15                             ;
+;     -- Registered Connections               ; 14912 ; 545              ; 3993                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; External Connections                        ;       ;                  ;                                ;                                ;
+;     -- Top                                  ; 0     ; 119              ; 944                            ; 15                             ;
+;     -- sld_hub:auto_hub                     ; 119   ; 16               ; 112                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 944   ; 112              ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 15    ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Partition Interface                         ;       ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 8     ; 19               ; 125                            ; 1                              ;
+;     -- Output Ports                         ; 44    ; 37               ; 78                             ; 1                              ;
+;     -- Bidir Ports                          ; 0     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Registered Ports                            ;       ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0     ; 4                ; 74                             ; 0                              ;
+;     -- Registered Output Ports              ; 0     ; 26               ; 69                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Port Connectivity                           ;       ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0     ; 1                ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0     ; 2                ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0     ; 15               ; 69                             ; 0                              ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++---------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                              ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Estimated Total logic elements              ; 4,262                 ;
+;                                             ;                       ;
+; Total combinational functions               ; 2805                  ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 685                   ;
+;     -- 3 input functions                    ; 1133                  ;
+;     -- <=2 input functions                  ; 987                   ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 2149                  ;
+;     -- arithmetic mode                      ; 656                   ;
+;                                             ;                       ;
+; Total registers                             ; 3579                  ;
+;     -- Dedicated logic registers            ; 3579                  ;
+;     -- I/O registers                        ; 0                     ;
+;                                             ;                       ;
+; I/O pins                                    ; 14                    ;
+; Total memory bits                           ; 364672                ;
+; Embedded Multiplier 9-bit elements          ; 12                    ;
+; Total PLLs                                  ; 1                     ;
+;     -- PLLs                                 ; 1                     ;
+;                                             ;                       ;
+; Maximum fan-out node                        ; clk_gen:inst4|clk_48K ;
+; Maximum fan-out                             ; 3529                  ;
+; Total fan-out                               ; 27948                 ;
+; Average fan-out                             ; 4.10                  ;
++---------------------------------------------+-----------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                            ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------+
+; Name                                                                                                                                                                                                                                                                                                           ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                    ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------+
+; FIFO:inst8|dcfifo:dcfifo_component|dcfifo_7ud1:auto_generated|altsyncram_tmu:fifo_ram|altsyncram_8bc1:altsyncram14|ALTSYNCRAM                                                                                                                                                                                  ; AUTO ; True Dual Port   ; 1024         ; 8            ; 1024         ; 8            ; 8192   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_3dp_rom_fft_111:twrom|twid_rom_fft_111:\gen_M4K:cos_1n|altsyncram:\gen_auto:altsyncram_component|altsyncram_sf91:auto_generated|ALTSYNCRAM                                         ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048   ; fft_core_1n1024cos.hex ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_3dp_rom_fft_111:twrom|twid_rom_fft_111:\gen_M4K:cos_2n|altsyncram:\gen_auto:altsyncram_component|altsyncram_tf91:auto_generated|ALTSYNCRAM                                         ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048   ; fft_core_2n1024cos.hex ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_3dp_rom_fft_111:twrom|twid_rom_fft_111:\gen_M4K:cos_3n|altsyncram:\gen_auto:altsyncram_component|altsyncram_uf91:auto_generated|ALTSYNCRAM                                         ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048   ; fft_core_3n1024cos.hex ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_3dp_rom_fft_111:twrom|twid_rom_fft_111:\gen_M4K:sin_1n|altsyncram:\gen_auto:altsyncram_component|altsyncram_1g91:auto_generated|ALTSYNCRAM                                         ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048   ; fft_core_1n1024sin.hex ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_3dp_rom_fft_111:twrom|twid_rom_fft_111:\gen_M4K:sin_2n|altsyncram:\gen_auto:altsyncram_component|altsyncram_2g91:auto_generated|ALTSYNCRAM                                         ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048   ; fft_core_2n1024sin.hex ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_3dp_rom_fft_111:twrom|twid_rom_fft_111:\gen_M4K:sin_3n|altsyncram:\gen_auto:altsyncram_component|altsyncram_3g91:auto_generated|ALTSYNCRAM                                         ; AUTO ; ROM              ; 256          ; 8            ; --           ; --           ; 2048   ; fft_core_3n1024sin.hex ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_C|asj_fft_data_ram_fft_111:\gen_rams:0:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_C|asj_fft_data_ram_fft_111:\gen_rams:1:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_C|asj_fft_data_ram_fft_111:\gen_rams:2:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_C|asj_fft_data_ram_fft_111:\gen_rams:3:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_D|asj_fft_data_ram_fft_111:\gen_rams:0:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_D|asj_fft_data_ram_fft_111:\gen_rams:1:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_D|asj_fft_data_ram_fft_111:\gen_rams:2:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:\gen_M4K_Output:dat_D|asj_fft_data_ram_fft_111:\gen_rams:3:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_A|asj_fft_data_ram_fft_111:\gen_rams:0:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_A|asj_fft_data_ram_fft_111:\gen_rams:1:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_A|asj_fft_data_ram_fft_111:\gen_rams:2:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_A|asj_fft_data_ram_fft_111:\gen_rams:3:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_B|asj_fft_data_ram_fft_111:\gen_rams:0:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_B|asj_fft_data_ram_fft_111:\gen_rams:1:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_B|asj_fft_data_ram_fft_111:\gen_rams:2:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|asj_fft_4dp_ram_fft_111:dat_B|asj_fft_data_ram_fft_111:\gen_rams:3:dat_A|altsyncram:\gen_M4K:altsyncram_component|altsyncram_iju3:auto_generated|ALTSYNCRAM                                ; AUTO ; Simple Dual Port ; 256          ; 16           ; 256          ; 16           ; 4096   ; None                   ;
+; fft_fifo_design:inst1|fft_control:fft_control|fft_core:dut|asj_fft_sglstream_fft_111:asj_fft_sglstream_fft_111_inst|auk_dspip_avalon_streaming_sink_fft_111:auk_dsp_atlantic_sink_1|scfifo:\normal_fifo:fifo_eab_on:in_fifo|scfifo_e9h1:auto_generated|a_dpfifo_7k81:dpfifo|altsyncram_eof1:FIFOram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 8            ; 18           ; 8            ; 18           ; 144    ; None                   ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ns14:auto_generated|altsyncram_vgq1:altsyncram1|ALTSYNCRAM                                                                              ; AUTO ; True Dual Port   ; 8192         ; 34           ; 8192         ; 34           ; 278528 ; None                   ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------+
+
+
++-----------------------------------------------------+
+; Partition Merge DSP Block Usage Summary             ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 12          ;
+; Simple Multipliers (18-bit)           ; 0           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 12          ;
+; Signed Embedded Multipliers           ; 12          ;
+; Unsigned Embedded Multipliers         ; 0           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Wed May 14 15:34:18 2014
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off fft_t -c fft_t --merge=on
+Warning (35010): Previously generated Fitter netlist for partition "Top" is older than current Synthesis netlist -- using the current Synthesis netlist instead to ensure that the latest source changes are included
+    Info (35011): Set the option to Ignore source file changes to force the Quartus II software to always use a previously generated Fitter netlist
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 69 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info (35002): Resolved and merged 3 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 4929 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 4501 logic cells
+    Info (21064): Implemented 396 RAM segments
+    Info (21065): Implemented 1 PLLs
+    Info (21062): Implemented 12 DSP elements
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 486 megabytes
+    Info: Processing ended: Wed May 14 15:34:21 2014
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+

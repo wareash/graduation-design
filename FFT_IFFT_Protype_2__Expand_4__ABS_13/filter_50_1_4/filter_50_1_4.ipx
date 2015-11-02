@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+ <!--  date: 2014.05.16.13:42:57 -->
+ <component
+   name="filter_50_1_4"
+   file="filter_50_1_4.mdl"
+   displayName="filter_50_1_4"
+   version="1.0"
+   description="A DSP Builder System."
+   tags="AUTHORSHIP=DSPBuilder Design"
+   categories="DSPBuilder 7.1 Components"
+   factory="DSPBuilderFactory" />
+ <component
+   name="filter_50_1_4_Interface"
+   file="filter_50_1_4.mdl"
+   displayName="filter_50_1_4_Interface"
+   version="1.0"
+   description="A DSP Builder System."
+   tags="AUTHORSHIP=DSPBuilder Design"
+   categories="DSPBuilder Systems"
+   factory="DSPBuilderFactory" />
+</library>

@@ -1,0 +1,20 @@
+module code_change(
+						clk,rst_n,
+						data_in,data_out
+						);
+						
+input clk;
+input rst_n;
+input [7:0]data_in;
+
+output [7:0]data_out;
+
+reg [7:0] data_in_r;
+reg [7:0] data_out;
+
+
+
+
+
+						
+endmodule

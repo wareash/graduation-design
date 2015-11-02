@@ -1,0 +1,100 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\TingQiang\Desktop\FFT__Protype\FFT_Protype_1_512_No_ABS\simulation\modelsim
+vfft_control
+IJCF^]ohDeMo:3Jl=?86MY3
+VC]DCmY27ZV>C1bCNR9^892
+Z1 dC:\Users\TingQiang\Desktop\FFT__Protype\FFT_Protype_1_512_No_ABS\simulation\modelsim
+w1393418054
+8C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_contrl.v
+FC:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_contrl.v
+L0 3
+Z2 OV;L;10.0c;49
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS -O0
+!s100 @74Vj3gKi8iT9aT2JazAP2
+!s85 0
+!s108 1401279397.134000
+!s107 C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_contrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS|C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_contrl.v|
+!s101 -O0
+vfft_core
+IGg6@ba^JiFWz[=4^AKnCV3
+VfDn1oHEQNLN0Yz^_UCR331
+R1
+w1393846304
+8C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core.vo
+FC:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core.vo
+L0 31
+R2
+r1
+31
+R3
+R4
+!s100 :[QeG]HOWP:QSY9SIS][`1
+!s85 0
+!s108 1401279396.453000
+!s107 C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS|C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core.vo|
+!s101 -O0
+vfft_core_tb
+!s100 =CKkAGCie4=L]IFQ<hWz32
+IJ5?`]jPoW<nOk:E6nmjGz1
+Va=SIb5AEdOTVQVW_O6OSR3
+R1
+w1393846278
+8C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core_tb.v
+FC:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core_tb.v
+L0 25
+R2
+r1
+!s85 0
+31
+!s108 1401279397.580000
+!s107 C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS|C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_core_tb.v|
+!s101 -O0
+R3
+R4
+vfft_fifo_design
+IEmbE=ZkMZ@ifDBlSCGA?11
+V@=hREJD077Y4BSIQKLokk0
+R1
+w1393846386
+8C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_fifo_design.v
+FC:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_fifo_design.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!s100 h9JgCo5SeVbFg_>dGY:d?3
+!s85 0
+!s108 1401279397.278000
+!s107 C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_fifo_design.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS|C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/fft_fifo_design.v|
+!s101 -O0
+vtest_point
+I3;R[7mDFg;D6ZP<3=4f5D3
+V2YoaYSA@kU=jO_YOIG@li1
+R1
+w1393458175
+8C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/test_point.v
+FC:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/test_point.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 @?ThG1i^TPQi786d08Dl?2
+!s85 0
+!s108 1401279397.428000
+!s107 C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/test_point.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS|C:/Users/TingQiang/Desktop/FFT__Protype/FFT_Protype_1_512_No_ABS/test_point.v|
+!s101 -O0

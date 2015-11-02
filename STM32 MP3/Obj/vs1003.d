@@ -1,0 +1,12 @@
+.\Obj\vs1003.o: user\VS1003.c
+.\Obj\vs1003.o: user\vs1003.h
+.\Obj\vs1003.o: .\FWlib\inc\stm32f10x_spi.h
+.\Obj\vs1003.o: .\CM3\stm32f10x.h
+.\Obj\vs1003.o: .\CM3\core_cm3.h
+.\Obj\vs1003.o: C:\Keil\ARM\RV31\INC\stdint.h
+.\Obj\vs1003.o: .\CM3\system_stm32f10x.h
+.\Obj\vs1003.o: .\FWlib\inc\stm32f10x_conf.h
+.\Obj\vs1003.o: .\FWlib\inc\stm32f10x_gpio.h
+.\Obj\vs1003.o: .\CM3\stm32f10x.h
+.\Obj\vs1003.o: .\FWlib\inc\stm32f10x_rcc.h
+.\Obj\vs1003.o: .\FWlib\inc\stm32f10x_spi.h

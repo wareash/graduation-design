@@ -1,0 +1,96 @@
+
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS/fft_core.v
+
+May 14 10AM:28:15>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS/fft_core.v
+
+May 14 10AM:28:20>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS/fft_core.v
+
+May 14 10AM:28:22>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS/fft_core.v
+
+May 14 10AM:29:36>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS/fft_core.v
+
+May 14 10AM:29:38>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS/fft_core.v
+
+May 14 10AM:29:38>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS/fft_core.v
+
+May 14 10AM:51:26>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:27>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:31>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:32>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:32>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:33>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:40>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:40>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:41>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 14 04PM:05:41>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 28 07PM:09:56>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 28 07PM:10:08>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.v
+
+May 28 07PM:10:11>: Megafunction FFT v11.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

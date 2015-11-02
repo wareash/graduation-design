@@ -1,0 +1,108 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do fft_t_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_core.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fft_core
+# 
+# Top level modules:
+# 	fft_core
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/PLL.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PLL
+# 
+# Top level modules:
+# 	PLL
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_contrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fft_control
+# 
+# Top level modules:
+# 	fft_control
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_fifo_design.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fft_fifo_design
+# 
+# Top level modules:
+# 	fft_fifo_design
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/code_change.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module code_change
+# 
+# Top level modules:
+# 	code_change
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/FIFO.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/FFT_DATA_RAM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FFT_DATA_RAM
+# 
+# Top level modules:
+# 	FFT_DATA_RAM
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/fft_conv_pwm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fft_conv_pwm
+# 
+# Top level modules:
+# 	fft_conv_pwm
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/clk_gen_sample_rate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen_sample_rate
+# 
+# Top level modules:
+# 	clk_gen_sample_rate
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/channel_MUX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module channel_MUX
+# 
+# Top level modules:
+# 	channel_MUX
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/spi_slave.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SPI_Slave
+# 
+# Top level modules:
+# 	SPI_Slave
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/pwm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm
+# 
+# Top level modules:
+# 	pwm
+# vlog -vlog01compat -work work +incdir+C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13 {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/clk_pwm.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_pwm
+# 
+# Top level modules:
+# 	clk_pwm
+# vcom -93 -work work {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/filter_50_1_4/alt_dspbuilder_SBF.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# ** Error: (vcom-11) Could not find altera.alt_dspbuilder_package.
+# 
+# ** Error: C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/filter_50_1_4/alt_dspbuilder_SBF.vhd(25): (vcom-1195) Cannot find expanded name "altera.alt_dspbuilder_package".
+# 
+# ** Error: C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/filter_50_1_4/alt_dspbuilder_SBF.vhd(25): Unknown expanded name.
+# ** Error: C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/filter_50_1_4/alt_dspbuilder_SBF.vhd(27): VHDL Compiler exiting
+# ** Error: C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./fft_t_run_msim_rtl_vhdl.do line 21
+# C:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/TingQiang/Desktop/Gradual_D/FFT_IFFT_Protype_2__Expand_4__ABS_13/filter_50_1_4/alt_dspbuilder_SBF.vhd}"

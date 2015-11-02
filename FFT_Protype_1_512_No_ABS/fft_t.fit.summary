@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Mar 03 19:34:00 2014
+Quartus II 64-Bit Version : 11.1 Build 173 11/01/2011 SJ Full Version
+Revision Name : fft_t
+Top-level Entity Name : fft_t
+Family : Cyclone II
+Device : EP2C8Q208C8
+Timing Models : Final
+Total logic elements : 3,679 / 8,256 ( 45 % )
+    Total combinational functions : 2,541 / 8,256 ( 31 % )
+    Dedicated logic registers : 3,260 / 8,256 ( 39 % )
+Total registers : 3260
+Total pins : 22 / 138 ( 16 % )
+Total virtual pins : 0
+Total memory bits : 68,736 / 165,888 ( 41 % )
+Embedded Multiplier 9-bit elements : 12 / 36 ( 33 % )
+Total PLLs : 0 / 2 ( 0 % )

@@ -1,0 +1,63 @@
+library verilog;
+use verilog.vl_types.all;
+entity ama_coef_reg_ext_function is
+    generic(
+        width_coef      : integer := 1;
+        register_clock_0: string  := "UNREGISTERED";
+        register_aclr_0 : string  := "UNUSED";
+        register_clock_1: string  := "UNREGISTERED";
+        register_aclr_1 : string  := "UNUSED";
+        register_clock_2: string  := "UNREGISTERED";
+        register_aclr_2 : string  := "UNUSED";
+        register_clock_3: string  := "UNREGISTERED";
+        register_aclr_3 : string  := "UNUSED";
+        number_of_multipliers: integer := 1;
+        port_sign       : string  := "PORT_CONNECTIVITY";
+        coef0_0         : integer := 0;
+        coef0_1         : integer := 0;
+        coef0_2         : integer := 0;
+        coef0_3         : integer := 0;
+        coef0_4         : integer := 0;
+        coef0_5         : integer := 0;
+        coef0_6         : integer := 0;
+        coef0_7         : integer := 0;
+        coef1_0         : integer := 0;
+        coef1_1         : integer := 0;
+        coef1_2         : integer := 0;
+        coef1_3         : integer := 0;
+        coef1_4         : integer := 0;
+        coef1_5         : integer := 0;
+        coef1_6         : integer := 0;
+        coef1_7         : integer := 0;
+        coef2_0         : integer := 0;
+        coef2_1         : integer := 0;
+        coef2_2         : integer := 0;
+        coef2_3         : integer := 0;
+        coef2_4         : integer := 0;
+        coef2_5         : integer := 0;
+        coef2_6         : integer := 0;
+        coef2_7         : integer := 0;
+        coef3_0         : integer := 0;
+        coef3_1         : integer := 0;
+        coef3_2         : integer := 0;
+        coef3_3         : integer := 0;
+        coef3_4         : integer := 0;
+        coef3_5         : integer := 0;
+        coef3_6         : integer := 0;
+        coef3_7         : integer := 0
+    );
+    port(
+        clock           : in     vl_logic_vector(3 downto 0);
+        aclr            : in     vl_logic_vector(3 downto 0);
+        ena             : in     vl_logic_vector(3 downto 0);
+        sign            : in     vl_logic;
+        coefsel0        : in     vl_logic_vector(2 downto 0);
+        coefsel1        : in     vl_logic_vector(2 downto 0);
+        coefsel2        : in     vl_logic_vector(2 downto 0);
+        coefsel3        : in     vl_logic_vector(2 downto 0);
+        data_out_0      : out    vl_logic_vector;
+        data_out_1      : out    vl_logic_vector;
+        data_out_2      : out    vl_logic_vector;
+        data_out_3      : out    vl_logic_vector
+    );
+end ama_coef_reg_ext_function;

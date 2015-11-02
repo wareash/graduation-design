@@ -1,0 +1,33 @@
+`timescale 1ns / 1ps
+module fft_fifo_design(
+
+
+
+
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+endmodule
+

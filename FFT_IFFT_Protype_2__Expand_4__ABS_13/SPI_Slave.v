@@ -1,0 +1,102 @@
+
+//`timescale 1ns/1ps
+module SPI_Slave(clk,rst_n,
+                                SCK,MOSI,MISO,NSS,INT,
+                                Data_Ready,Data_Received,Data_transmit
+                                );
+input clk;                //FPGA clock,50MHz
+input rst_n;        //FPGA reset signal,fallingedge is effective
+input SCK;                //Master's SPI SCK signal,Idle:0/Risingedge:Sample/Fallingedge:Latched
+input MOSI;                //Master Out Slaver In
+output MISO;        //Master In Slaver Out
+input NSS;                //SPI Chip-select signal
+output INT;                //Slaver interrupt signal of requesting to send data to Master
+
+input [7:0]Data_transmit;
+
+output Data_Ready;        //detect Data_Received ready or not
+output[7:0] Data_Received;        //SPI_Bus receive data from the Master
+//===============================================================================
+//sync SCK to the FPGA clock using a 3-bits shift register
+reg[2:0] SCK_r;
+
+always @(posedge clk or negedge rst_n)
+        if(!rst_n) SCK_r <= 3'b000;
+        else SCK_r <= {SCK_r[1:0],SCK};
+
+wire SCK_risingedge = (SCK_r[2:1]==2'b01);        //Now we can detect SCK rising edges
+wire SCK_fallingedge = (SCK_r[2:1]==2'b10);        //and falling edges
+
+//the same thing for NSS
+reg[2:0] NSS_r;
+always @(posedge clk or negedge rst_n)
+        if(!rst_n) NSS_r <= 3'b000;
+        else NSS_r <= {NSS_r[1:0],NSS};
+
+wire NSS_Active = ~NSS_r[1];        //NSS is active now
+wire NSS_startmessage = (NSS_r[2:1]==2'b10);        //message starts at falling edge
+//not be used//wire NSS_endmessage = (NSS_r[2:1]==2'b01);                //message stops at rising edge
+
+//and for MOSI
+reg[1:0] MOSI_r;
+always @(posedge clk or negedge rst_n)
+        if(!rst_n) MOSI_r <= 2'b00;
+        else MOSI_r <= {MOSI_r[0],MOSI};
+
+wire MOSI_Data = MOSI_r[1];
+
+//===============================================================================
+//we handle SPI in 8-bits format,so we need a 3-bits counter to count the bits as they come in.
+reg[2:0] bitcnt;
+reg byte_received;        //high while a byte has already been received
+reg[7:0] byte_data_received;
+
+always @(posedge clk or negedge rst_n)
+        if(!rst_n) begin bitcnt <= 3'b000; byte_data_received <= 7'h00; end
+        else if(!NSS_Active) bitcnt <= 3'b000;
+        else if(SCK_risingedge) begin
+                bitcnt <= bitcnt +1'b1;
+                //implement a shift-left register(since we receive the data MSB first)
+                byte_data_received <= {byte_data_received[6:0],MOSI_Data};
+        end
+
+
+assign Data_Received = byte_data_received;
+
+always @(posedge clk or negedge rst_n)
+        if(!rst_n) byte_received <= 1'b1;
+        else
+                byte_received <= NSS_Active && SCK_risingedge && (bitcnt==3'b111);
+assign Data_Ready = byte_received;
+//===============================================================================
+//Here we use INT signal for test,we use the LSB of the data received to control an LED
+reg INT;
+always @(posedge clk) if(Data_Ready) INT <= byte_data_received[0];
+// count the messages
+reg[7:0] cnt;
+always @(posedge clk or negedge rst_n)
+        if(!rst_n) cnt <= 8'h00;
+        else if(NSS_startmessage) cnt <= cnt + 8'h1;//NSS_Active && SCK_risingedge && (bitcnt==3'b111)
+
+//===============================================================================
+reg[7:0] byte_data_send;
+
+always @(posedge clk)
+        if(NSS_Active)
+        begin
+                if(NSS_startmessage) byte_data_send <=cnt; //first byte send in a message is the message count
+                else 
+                        if(SCK_fallingedge)
+                        begin
+                                if(bitcnt==3'b000) byte_data_send <= 8'h00; //after that,we send 0s
+                                else byte_data_send <= {byte_data_send[6:0],1'b0};
+                        end
+        end
+//always @(posedge clk or negedge rst_n)
+//        if(!rst_n) byte_data_send <= 8'd123;
+//        else if(NSS_Active&&SCK_fallingedge)
+//                byte_data_send <= {byte_data_send[6:0],1'b0};
+//        
+assign MISO = byte_data_send[7];        //send MSB first
+
+endmodule 

@@ -1,0 +1,77 @@
+
+`timescale 1ns / 1ps
+module fft_control(
+					clk,reset_n,
+					
+					sink_real,sink_imag,                   //Important III
+					sink_valid,                            //Important III
+					sink_sop,sink_eop,                     //Important II    
+					
+					source_real,source_imag,               //Important III
+					source_valid,                          //Important III
+					source_sop,source_eop,                 //Important I
+					source_exp,sink_ready,source_error     //Important 0
+					);
+
+//input port
+input clk;
+input reset_n;
+input [7:0]sink_real;
+input [7:0]sink_imag;
+input sink_sop;           //表示输出FFT帧的开始  
+input sink_eop;           //表示输出FFT帧的结束 
+input sink_valid;         //有效标记信号，FFT引擎准备和接收数据时置位 
+wire  [1:0]sink_error;
+wire  inverse;
+wire  source_ready;       //源准备好数据，下传模块在可以接受数据时置位
+
+
+//output port
+output [7:0]source_real;
+output [7:0]source_imag;
+output [1:0]source_error;
+output sink_ready;
+output [5:0]source_exp;   //有符号的块指数，对内部有符号数进行缩放
+output source_valid;      
+output source_sop;        //表示输出FFT帧的开始
+output source_eop;        //表示输出FFT帧的结束
+
+//input assign
+assign inverse      = 1'b0; // Set FFT Direction  
+assign sink_error   =2'b00;
+assign source_ready = 1'b1;
+
+//input signal easy use design logic
+
+
+//output signal easy use design logic
+
+
+
+
+
+
+//512 point
+
+	fft_core dut(
+		      .clk(clk),                   //I
+		      .reset_n(reset_n),           //I
+		      .inverse(inverse),           //I
+		      .sink_real(sink_real),       //I
+		      .sink_imag(sink_imag),       //I
+		      .sink_sop(sink_sop),         //I   表示输入FFT帧的开始
+		      .sink_eop(sink_eop),         //I   表示输入FFT帧的结束
+		      .sink_valid(sink_valid),     //I   输入数据总线有有效数据时置位
+            .sink_error(sink_error),     //I
+            .source_error(source_error), //O
+		      .source_ready(source_ready), //I
+		      .sink_ready(sink_ready),     //O
+		      .source_real(source_real),   //O
+		      .source_imag(source_imag),   //O
+		      .source_exp(source_exp),     //O
+		      .source_valid(source_valid), //O
+		      .source_sop(source_sop),     //O
+		      .source_eop(source_eop)      //O
+		      );
+
+endmodule
